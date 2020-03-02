@@ -10,7 +10,7 @@
             },
             {
                 "name": "Disk",
-                "path": "/tmp/cache"
+                "path": "tmp"
             }
         ]
     },
