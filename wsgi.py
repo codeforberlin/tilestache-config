@@ -2,5 +2,5 @@ import os
 
 import TileStache
 
-config = os.path.join(os.path.dirname(__file__), 'tilestache.cfg')
+config = os.path.join(os.path.dirname(__file__), 'config.json')
 application = TileStache.WSGITileServer(config)

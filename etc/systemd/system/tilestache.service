@@ -1,0 +1,32 @@
+[Unit]
+Description=gunicorn daemon for tilestache
+
+[Service]
+User=tiles
+Group=tiles
+
+WorkingDirectory=/srv/tiles/tilestache-config
+
+Environment=GUNICORN_BIN=gunicorn3
+Environment=GUNICORN_WORKER=3
+Environment=GUNICORN_PORT=9000
+Environment=GUNICORN_TIMEOUT=120
+Environment=GUNICORN_PID_FILE=/run/tilestache/gunicorn.pid
+Environment=GUNICORN_ACCESS_LOG_FILE=/var/log/tilestache/access.log
+Environment=GUNICORN_ERROR_LOG_FILE=/var/log/tilestache/error.log
+
+ExecStart=/bin/sh -c '${GUNICORN_BIN} \
+  --workers ${GUNICORN_WORKER} \
+  --pid ${GUNICORN_PID_FILE} \
+  --bind localhost:${GUNICORN_PORT} \
+  --timeout ${GUNICORN_TIMEOUT} \
+  --access-logfile ${GUNICORN_ACCESS_LOG_FILE} \
+  --error-logfile ${GUNICORN_ERROR_LOG_FILE} \
+  config.wsgi:application'
+
+ExecReload=/bin/sh -c '/usr/bin/pkill -HUP -F ${GUNICORN_PID_FILE}'
+
+ExecStop=/bin/sh -c '/usr/bin/pkill -TERM -F ${GUNICORN_PID_FILE}'
+
+[Install]
+WantedBy=network.target
