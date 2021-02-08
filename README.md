@@ -1,3 +1,9 @@
+About
+-----
+
+This repo hold the server config for maps like [jochenklar/berlin-maps](https://github.com/jochenklar/berlin-maps) an others.
+
+
 Setup
 -----
 
