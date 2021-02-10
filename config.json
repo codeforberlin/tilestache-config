@@ -326,6 +326,20 @@
                 }
             }
         },
+        "berlin-2020": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "raster/berlin/2020/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
         "berlin-gebaeudealter": {
             "preview": {
                 "lat": 52.518611,
