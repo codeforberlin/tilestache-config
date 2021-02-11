@@ -326,7 +326,7 @@
                 }
             }
         },
-        "berlin-2020": {
+        "berlin-2020-truedop": {
             "preview": {
                 "lat": 52.518611,
                 "lon": 13.408333,
@@ -335,7 +335,7 @@
             "provider": {
                 "class": "TileStache.Goodies.Providers.GDAL:Provider",
                 "kwargs": {
-                    "filename": "raster/berlin/2020/tiles.vrt",
+                    "filename": "raster/berlin/2020-truedop/tiles.vrt",
                     "maskband": 1
                 }
             }
