@@ -1,7 +1,16 @@
 {
     "cache": {
-        "name": "Disk",
-        "path": "tmp"
+        "name": "Multi",
+        "tiers": [
+            {
+               "name": "Memcache",
+               "servers": ["127.0.0.1:11211"]
+            },
+            {
+               "name": "Disk",
+               "path": "tmp"
+            }
+        ]
     },
     "layers": {
         "berlin-1650": {
@@ -13,7 +22,7 @@
             "provider": {
                 "class": "TileStache.Goodies.Providers.GDAL:Provider",
                 "kwargs": {
-                    "filename": "raster/berlin/1650/tiles.vrt",
+                    "filename": "berlin/historische-karten/1650/tiles.vrt",
                     "maskband": 1
                 }
             }
@@ -27,7 +36,7 @@
             "provider": {
                 "class": "TileStache.Goodies.Providers.GDAL:Provider",
                 "kwargs": {
-                    "filename": "raster/berlin/1690/tiles.vrt",
+                    "filename": "berlin/historische-karten/1690/tiles.vrt",
                     "maskband": 1
                 }
             }
@@ -41,7 +50,7 @@
             "provider": {
                 "class": "TileStache.Goodies.Providers.GDAL:Provider",
                 "kwargs": {
-                    "filename": "raster/berlin/1750/tiles.vrt",
+                    "filename": "berlin/historische-karten/1750/tiles.vrt",
                     "maskband": 1
                 }
             }
@@ -55,7 +64,7 @@
             "provider": {
                 "class": "TileStache.Goodies.Providers.GDAL:Provider",
                 "kwargs": {
-                    "filename": "raster/berlin/1800/tiles.vrt",
+                    "filename": "berlin/historische-karten/1800/tiles.vrt",
                     "maskband": 1
                 }
             }
@@ -69,7 +78,7 @@
             "provider": {
                 "class": "TileStache.Goodies.Providers.GDAL:Provider",
                 "kwargs": {
-                    "filename": "raster/berlin/1850/tiles.vrt",
+                    "filename": "berlin/historische-karten/1850/tiles.vrt",
                     "maskband": 1
                 }
             }
@@ -83,8 +92,7 @@
             "provider": {
                 "class": "TileStache.Goodies.Providers.GDAL:Provider",
                 "kwargs": {
-                    "filename": "raster/berlin/1880/tiles.vrt",
-                    "maskband": 1
+                    "filename": "berlin/historische-karten/1880/tiles.vrt"
                 }
             }
         },
@@ -97,21 +105,7 @@
             "provider": {
                 "class": "TileStache.Goodies.Providers.GDAL:Provider",
                 "kwargs": {
-                    "filename": "raster/berlin/1910/tiles.vrt",
-                    "maskband": 1
-                }
-            }
-        },
-        "berlin-1928": {
-            "preview": {
-                "lat": 52.518611,
-                "lon": 13.408333,
-                "zoom": 15
-            },
-            "provider": {
-                "class": "TileStache.Goodies.Providers.GDAL:Provider",
-                "kwargs": {
-                    "filename": "raster/berlin/1928/tiles.vrt",
+                    "filename": "berlin/historische-karten/1910/tiles.vrt",
                     "maskband": 1
                 }
             }
@@ -125,21 +119,7 @@
             "provider": {
                 "class": "TileStache.Goodies.Providers.GDAL:Provider",
                 "kwargs": {
-                    "filename": "raster/berlin/1940/tiles.vrt",
-                    "maskband": 1
-                }
-            }
-        },
-        "berlin-1953": {
-            "preview": {
-                "lat": 52.518611,
-                "lon": 13.408333,
-                "zoom": 15
-            },
-            "provider": {
-                "class": "TileStache.Goodies.Providers.GDAL:Provider",
-                "kwargs": {
-                    "filename": "raster/berlin/1953/tiles.vrt",
+                    "filename": "berlin/historische-karten/1940/tiles.vrt",
                     "maskband": 1
                 }
             }
@@ -153,189 +133,7 @@
             "provider": {
                 "class": "TileStache.Goodies.Providers.GDAL:Provider",
                 "kwargs": {
-                    "filename": "raster/berlin/1986/tiles.vrt",
-                    "maskband": 1
-                }
-            }
-        },
-        "berlin-2004": {
-            "preview": {
-                "lat": 52.518611,
-                "lon": 13.408333,
-                "zoom": 15
-            },
-            "provider": {
-                "class": "TileStache.Goodies.Providers.GDAL:Provider",
-                "kwargs": {
-                    "filename": "raster/berlin/2004/tiles.vrt",
-                    "maskband": 1
-                }
-            }
-        },
-        "berlin-2006": {
-            "preview": {
-                "lat": 52.518611,
-                "lon": 13.408333,
-                "zoom": 15
-            },
-            "provider": {
-                "class": "TileStache.Goodies.Providers.GDAL:Provider",
-                "kwargs": {
-                    "filename": "raster/berlin/2006/tiles.vrt",
-                    "maskband": 1
-                }
-            }
-        },
-        "berlin-2007": {
-            "preview": {
-                "lat": 52.518611,
-                "lon": 13.408333,
-                "zoom": 15
-            },
-            "provider": {
-                "class": "TileStache.Goodies.Providers.GDAL:Provider",
-                "kwargs": {
-                    "filename": "raster/berlin/2007/tiles.vrt",
-                    "maskband": 1
-                }
-            }
-        },
-        "berlin-2009": {
-            "preview": {
-                "lat": 52.518611,
-                "lon": 13.408333,
-                "zoom": 15
-            },
-            "provider": {
-                "class": "TileStache.Goodies.Providers.GDAL:Provider",
-                "kwargs": {
-                    "filename": "raster/berlin/2009/tiles.vrt",
-                    "maskband": 1
-                }
-            }
-        },
-        "berlin-2010": {
-            "preview": {
-                "lat": 52.518611,
-                "lon": 13.408333,
-                "zoom": 15
-            },
-            "provider": {
-                "class": "TileStache.Goodies.Providers.GDAL:Provider",
-                "kwargs": {
-                    "filename": "raster/berlin/2010/tiles.vrt",
-                    "maskband": 1
-                }
-            }
-        },
-        "berlin-2014": {
-            "preview": {
-                "lat": 52.518611,
-                "lon": 13.408333,
-                "zoom": 15
-            },
-            "provider": {
-                "class": "TileStache.Goodies.Providers.GDAL:Provider",
-                "kwargs": {
-                    "filename": "raster/berlin/2014/tiles.vrt",
-                    "maskband": 1
-                }
-            }
-        },
-        "berlin-2015": {
-            "preview": {
-                "lat": 52.518611,
-                "lon": 13.408333,
-                "zoom": 15
-            },
-            "provider": {
-                "class": "TileStache.Goodies.Providers.GDAL:Provider",
-                "kwargs": {
-                    "filename": "raster/berlin/2015/tiles.vrt",
-                    "maskband": 1
-                }
-            }
-        },
-        "berlin-2016": {
-            "preview": {
-                "lat": 52.518611,
-                "lon": 13.408333,
-                "zoom": 15
-            },
-            "provider": {
-                "class": "TileStache.Goodies.Providers.GDAL:Provider",
-                "kwargs": {
-                    "filename": "raster/berlin/2016/tiles.vrt",
-                    "maskband": 1
-                }
-            }
-        },
-        "berlin-2016i": {
-            "preview": {
-                "lat": 52.518611,
-                "lon": 13.408333,
-                "zoom": 15
-            },
-            "provider": {
-                "class": "TileStache.Goodies.Providers.GDAL:Provider",
-                "kwargs": {
-                    "filename": "raster/berlin/2016i/tiles.vrt",
-                    "maskband": 1
-                }
-            }
-        },
-        "berlin-2017": {
-            "preview": {
-                "lat": 52.518611,
-                "lon": 13.408333,
-                "zoom": 15
-            },
-            "provider": {
-                "class": "TileStache.Goodies.Providers.GDAL:Provider",
-                "kwargs": {
-                    "filename": "raster/berlin/2017/tiles.vrt",
-                    "maskband": 1
-                }
-            }
-        },
-        "berlin-2018": {
-            "preview": {
-                "lat": 52.518611,
-                "lon": 13.408333,
-                "zoom": 15
-            },
-            "provider": {
-                "class": "TileStache.Goodies.Providers.GDAL:Provider",
-                "kwargs": {
-                    "filename": "raster/berlin/2018/tiles.vrt",
-                    "maskband": 1
-                }
-            }
-        },
-        "berlin-2019": {
-            "preview": {
-                "lat": 52.518611,
-                "lon": 13.408333,
-                "zoom": 15
-            },
-            "provider": {
-                "class": "TileStache.Goodies.Providers.GDAL:Provider",
-                "kwargs": {
-                    "filename": "raster/berlin/2019/tiles.vrt",
-                    "maskband": 1
-                }
-            }
-        },
-        "berlin-2020-truedop": {
-            "preview": {
-                "lat": 52.518611,
-                "lon": 13.408333,
-                "zoom": 15
-            },
-            "provider": {
-                "class": "TileStache.Goodies.Providers.GDAL:Provider",
-                "kwargs": {
-                    "filename": "raster/berlin/2020-truedop/tiles.vrt",
+                    "filename": "berlin/historische-karten/1986/tiles.vrt",
                     "maskband": 1
                 }
             }
@@ -349,7 +147,7 @@
             "provider": {
                 "class": "TileStache.Goodies.Providers.GDAL:Provider",
                 "kwargs": {
-                    "filename": "raster/berlin/gebaeudealter/tiles.vrt",
+                    "filename": "berlin/historische-karten/gebaeudealter/tiles.vrt",
                     "maskband": 1
                 }
             }
@@ -363,7 +161,7 @@
             "provider": {
                 "class": "TileStache.Goodies.Providers.GDAL:Provider",
                 "kwargs": {
-                    "filename": "raster/berlin/gebschaden/tiles.vrt",
+                    "filename": "berlin/historische-karten/gebschaden/tiles.vrt",
                     "maskband": 1
                 }
             }
@@ -377,8 +175,299 @@
             "provider": {
                 "class": "TileStache.Goodies.Providers.GDAL:Provider",
                 "kwargs": {
-                    "filename": "raster/berlin/hobrecht/tiles.vrt",
+                    "filename": "berlin/historische-karten/hobrecht/tiles.vrt",
                     "maskband": 1
+                }
+            }
+        },
+        "berlin-straubeplan": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/historische-karten/straubeplan/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
+        "berlin-1928": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/1928/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
+        "berlin-1953": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/1953/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
+        "berlin-2004-dop25rgb": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/2004-dop25rgb/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
+        "berlin-2006-dop15pan": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/2006-dop15pan/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
+        "berlin-2007-dop20rgb": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/2007-dop20rgb/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
+        "berlin-2010-dop20rgb": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/2010-dop20rgb/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
+        "berlin-2014-dop20rgb": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/2014-dop20rgb/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
+        "berlin-2015-dop20cir": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/2015-dop20cir/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
+        "berlin-2015-dop20rgb": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/2015-dop20rgb/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
+        "berlin-2016-dop20cir": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/2016-dop20cir/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
+        "berlin-2016-dop20rgb": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/2016-dop20rgb/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
+        "berlin-2017-dop20rgb": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/2017-dop20rgb/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
+        "berlin-2018-dop20rgb": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/2018-dop20rgb/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
+        "berlin-2019-dop20rgb": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/2019-dop20rgb/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
+        "berlin-2020-dop20cir": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/2020-dop20cir/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
+        "berlin-2020-dop20rgb": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/2020-dop20rgb/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
+        "berlin-2020-truedop20cir": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/2020-truedop20cir/tiles.vrt"
+                }
+            }
+        },
+        "berlin-2020-truedop20rgb": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/2020-truedop20rgb/tiles.vrt"
+                }
+            }
+        },
+        "berlin-2020-dop20rgbi": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/2020-dop20rgbi/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
+        "berlin-geo-18-19": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/umweltschutz/geo-18-19/tiles.vrt"
                 }
             }
         }
