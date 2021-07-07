@@ -1,1 +1,4 @@
+# a working pip install can be done with gdal <=2.4 and
+# pip install GDAL==<the same version as the installed gdal>
+# and
 tilestache==1.51.4
