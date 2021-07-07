@@ -92,7 +92,8 @@
             "provider": {
                 "class": "TileStache.Goodies.Providers.GDAL:Provider",
                 "kwargs": {
-                    "filename": "berlin/historische-karten/1880/tiles.vrt"
+                    "filename": "berlin/historische-karten/1880/tiles.vrt",
+                    "maskband": 1
                 }
             }
         },
