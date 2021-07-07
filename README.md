@@ -8,16 +8,7 @@ Setup
 -----
 
 ```bash
-apt-get install tilestache gunicorn3
-```
-
-or
-
-```bash
-conda config --add channels conda-forge
-conda config --set channel_priority strict
-conda install gdal==2.4.4
-pip install -r requirements.txt
+apt-get install tilestache gunicorn memcached python-requests python-gdal gdal-bin
 ```
 
 Usage
