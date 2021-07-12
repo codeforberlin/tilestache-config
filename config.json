@@ -209,20 +209,6 @@
                 }
             }
         },
-        "berlin-1953": {
-            "preview": {
-                "lat": 52.518611,
-                "lon": 13.408333,
-                "zoom": 15
-            },
-            "provider": {
-                "class": "TileStache.Goodies.Providers.GDAL:Provider",
-                "kwargs": {
-                    "filename": "berlin/luftbilder/1953/tiles.vrt",
-                    "maskband": 1
-                }
-            }
-        },
         "berlin-2004-dop25rgb": {
             "preview": {
                 "lat": 52.518611,
@@ -233,6 +219,20 @@
                 "class": "TileStache.Goodies.Providers.GDAL:Provider",
                 "kwargs": {
                     "filename": "berlin/luftbilder/2004-dop25rgb/tiles.vrt",
+                    "maskband": 1
+                }
+            }
+        },
+        "berlin-2006-dop15pan": {
+            "preview": {
+                "lat": 52.518611,
+                "lon": 13.408333,
+                "zoom": 15
+            },
+            "provider": {
+                "class": "TileStache.Goodies.Providers.GDAL:Provider",
+                "kwargs": {
+                    "filename": "berlin/luftbilder/2006-dop15pan/tiles.vrt",
                     "maskband": 1
                 }
             }
@@ -445,7 +445,7 @@
                 }
             }
         },
-        "berlin-2020-dop20rgbi": {
+        "berlin-2021-dop20rgbi": {
             "preview": {
                 "lat": 52.518611,
                 "lon": 13.408333,
@@ -454,7 +454,7 @@
             "provider": {
                 "class": "TileStache.Goodies.Providers.GDAL:Provider",
                 "kwargs": {
-                    "filename": "berlin/luftbilder/2020-dop20rgbi/tiles.vrt",
+                    "filename": "berlin/luftbilder/2021-dop20rgbi/tiles.vrt",
                     "maskband": 1
                 }
             }
