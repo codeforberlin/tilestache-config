@@ -1,16 +1,6 @@
 {
     "cache": {
-        "name": "Multi",
-        "tiers": [
-            {
-               "name": "Memcache",
-               "servers": ["127.0.0.1:11211"]
-            },
-            {
-               "name": "Disk",
-               "path": "tmp"
-            }
-        ]
+        "name": "Test"
     },
     "layers": {
         "berlin-1650": {
