@@ -7,7 +7,6 @@ with open('config.json') as fp:
 
 for layer in config['layers']:
     for zoom in ['10', '11', '12', '13']:
-        cmd = ['tilestache-seed', '-c', 'config.json',
-               '-b', '52.55', '13.28', '52.46', '13.51',
-               '-l', layer, zoom]
+        cmd = ['tilestache-seed', '-c', 'config.json', '-l', layer,
+               '-b', '52.68', '13.07', '52.33', '13.77', zoom]
         subprocess.check_call(cmd)
