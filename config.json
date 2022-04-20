@@ -3,12 +3,6 @@
     "name": "Multi",
     "tiers": [
       {
-        "name": "Memcache",
-        "servers": [
-          "127.0.0.1:11211"
-        ]
-      },
-      {
         "name": "Disk",
         "path": "tmp"
       }
@@ -589,7 +583,7 @@
         "high": 20
       }
     },
-    "berlin-geo-18-19": {
+    "berlin-k5": {
       "preview": {
         "lat": 52.518611,
         "lon": 13.408333,
@@ -598,7 +592,7 @@
       "provider": {
         "class": "TileStache.Goodies.Providers.GDAL:Provider",
         "kwargs": {
-          "filename": "berlin/umweltschutz/geo-18-19/tiles.vrt"
+          "filename": "berlin/basisdaten/k5/tiles.vrt"
         }
       },
       "bounds": {

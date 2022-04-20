@@ -593,6 +593,23 @@
         "low": 10,
         "high": 20
       }
+    },
+    "berlin-k5": {
+      "preview": {
+        "lat": 52.518611,
+        "lon": 13.408333,
+        "zoom": 15
+      },
+      "provider": {
+        "class": "TileStache.Goodies.Providers.GDAL:Provider",
+        "kwargs": {
+          "filename": "berlin/basisdaten/k5/tiles.vrt"
+        }
+      },
+      "bounds": {
+        "low": 10,
+        "high": 20
+      }
     }
   }
 }
