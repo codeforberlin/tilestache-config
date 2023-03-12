@@ -234,8 +234,7 @@
       "provider": {
         "class": "TileStache.Goodies.Providers.GDAL:Provider",
         "kwargs": {
-          "filename": "berlin/historische-karten/straubeplan/tiles.vrt",
-          "maskband": 1
+          "filename": "berlin/historische-karten/straubeplan/tiles.vrt"
         }
       },
       "bounds": {
@@ -288,8 +287,7 @@
       "provider": {
         "class": "TileStache.Goodies.Providers.GDAL:Provider",
         "kwargs": {
-          "filename": "berlin/luftbilder/2004-dop25rgb/tiles.vrt",
-          "maskband": 1
+          "filename": "berlin/luftbilder/2004-dop25rgb/tiles.vrt"
         }
       },
       "bounds": {
@@ -324,8 +322,7 @@
       "provider": {
         "class": "TileStache.Goodies.Providers.GDAL:Provider",
         "kwargs": {
-          "filename": "berlin/luftbilder/2007-dop20rgb/tiles.vrt",
-          "maskband": 1
+          "filename": "berlin/luftbilder/2007-dop20rgb/tiles.vrt"
         }
       },
       "bounds": {
@@ -342,8 +339,7 @@
       "provider": {
         "class": "TileStache.Goodies.Providers.GDAL:Provider",
         "kwargs": {
-          "filename": "berlin/luftbilder/2010-dop20rgb/tiles.vrt",
-          "maskband": 1
+          "filename": "berlin/luftbilder/2010-dop20rgb/tiles.vrt"
         }
       },
       "bounds": {
@@ -360,8 +356,7 @@
       "provider": {
         "class": "TileStache.Goodies.Providers.GDAL:Provider",
         "kwargs": {
-          "filename": "berlin/luftbilder/2014-dop20rgb/tiles.vrt",
-          "maskband": 1
+          "filename": "berlin/luftbilder/2014-dop20rgb/tiles.vrt"
         }
       },
       "bounds": {
@@ -378,8 +373,7 @@
       "provider": {
         "class": "TileStache.Goodies.Providers.GDAL:Provider",
         "kwargs": {
-          "filename": "berlin/luftbilder/2015-dop20cir/tiles.vrt",
-          "maskband": 1
+          "filename": "berlin/luftbilder/2015-dop20cir/tiles.vrt"
         }
       },
       "bounds": {
@@ -396,8 +390,7 @@
       "provider": {
         "class": "TileStache.Goodies.Providers.GDAL:Provider",
         "kwargs": {
-          "filename": "berlin/luftbilder/2015-dop20rgb/tiles.vrt",
-          "maskband": 1
+          "filename": "berlin/luftbilder/2015-dop20rgb/tiles.vrt"
         }
       },
       "bounds": {
@@ -414,8 +407,7 @@
       "provider": {
         "class": "TileStache.Goodies.Providers.GDAL:Provider",
         "kwargs": {
-          "filename": "berlin/luftbilder/2016-dop20cir/tiles.vrt",
-          "maskband": 1
+          "filename": "berlin/luftbilder/2016-dop20cir/tiles.vrt"
         }
       },
       "bounds": {
@@ -432,8 +424,7 @@
       "provider": {
         "class": "TileStache.Goodies.Providers.GDAL:Provider",
         "kwargs": {
-          "filename": "berlin/luftbilder/2016-dop20rgb/tiles.vrt",
-          "maskband": 1
+          "filename": "berlin/luftbilder/2016-dop20rgb/tiles.vrt"
         }
       },
       "bounds": {
@@ -450,8 +441,7 @@
       "provider": {
         "class": "TileStache.Goodies.Providers.GDAL:Provider",
         "kwargs": {
-          "filename": "berlin/luftbilder/2017-dop20rgb/tiles.vrt",
-          "maskband": 1
+          "filename": "berlin/luftbilder/2017-dop20rgb/tiles.vrt"
         }
       },
       "bounds": {
@@ -468,8 +458,7 @@
       "provider": {
         "class": "TileStache.Goodies.Providers.GDAL:Provider",
         "kwargs": {
-          "filename": "berlin/luftbilder/2018-dop20rgb/tiles.vrt",
-          "maskband": 1
+          "filename": "berlin/luftbilder/2018-dop20rgb/tiles.vrt"
         }
       },
       "bounds": {
@@ -486,8 +475,7 @@
       "provider": {
         "class": "TileStache.Goodies.Providers.GDAL:Provider",
         "kwargs": {
-          "filename": "berlin/luftbilder/2019-dop20rgb/tiles.vrt",
-          "maskband": 1
+          "filename": "berlin/luftbilder/2019-dop20rgb/tiles.vrt"
         }
       },
       "bounds": {
@@ -504,8 +492,7 @@
       "provider": {
         "class": "TileStache.Goodies.Providers.GDAL:Provider",
         "kwargs": {
-          "filename": "berlin/luftbilder/2020-dop20cir/tiles.vrt",
-          "maskband": 1
+          "filename": "berlin/luftbilder/2020-dop20cir/tiles.vrt"
         }
       },
       "bounds": {
@@ -522,8 +509,7 @@
       "provider": {
         "class": "TileStache.Goodies.Providers.GDAL:Provider",
         "kwargs": {
-          "filename": "berlin/luftbilder/2020-dop20rgb/tiles.vrt",
-          "maskband": 1
+          "filename": "berlin/luftbilder/2020-dop20rgb/tiles.vrt"
         }
       },
       "bounds": {
@@ -574,8 +560,7 @@
       "provider": {
         "class": "TileStache.Goodies.Providers.GDAL:Provider",
         "kwargs": {
-          "filename": "berlin/luftbilder/2021-dop20rgbi/tiles.vrt",
-          "maskband": 1
+          "filename": "berlin/luftbilder/2021-dop20rgbi/tiles.vrt"
         }
       },
       "bounds": {
@@ -592,8 +577,7 @@
       "provider": {
         "class": "TileStache.Goodies.Providers.GDAL:Provider",
         "kwargs": {
-          "filename": "berlin/luftbilder/2022-dop20rgbi/tiles.vrt",
-          "maskband": 1
+          "filename": "berlin/luftbilder/2022-dop20rgbi/tiles.vrt"
         }
       },
       "bounds": {
