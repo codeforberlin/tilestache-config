@@ -1,3 +1,12 @@
+## 🚫 Discontinued
+
+**This repo is no longer actively maintained.**  
+
+From June 2025 on, https://github.com/codeforberlin/tiles-config is used to maintain the configuration for
+https://tiles.codedefor.de. Please create issues or pull requests there.
+
+---
+
 About
 -----
 
